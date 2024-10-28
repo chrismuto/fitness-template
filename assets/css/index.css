@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
+    color: #253a5c;
 }
 
 nav {
@@ -12,12 +17,87 @@ nav {
     background-color: #253a5c;
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+article {
+    padding: 20px;
+}
+
+footer {
+    background-color: #253a5c;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
 .logo {
     width: 50px;
     height: 50px;
 }
 
-a {
-    text-decoration: none;
-    color: #8c95a3;
+.subtitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subprofile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .testimonial {
+    display: flex;
+} */
+
+
+.imagetabodd {
+    width: 100%;
+    grid-column: 1/2;
+}
+
+.imagetabeven {
+    width: 100%;
+    grid-column: 2/2;
+}
+
+#about {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin: 15px;
+    } */
+    
+#profileImage {
+    border-radius: 50%;
+}
+
+#aboutMe {
+    margin: 20px;
+}
+
+#training {
+    color: #FFFFFF;
+    background-color: #253a5c;
+}
+
+#imageTable {
+    display: grid;
+    grid-template-columns: repeat(1, 1);
+    background-color: #FFFFFF;
+    opacity: 0.5;
 }
