@@ -135,7 +135,7 @@ footer {
     justify-content: space-around;
     width: 50%;
     margin: 45px;
-    }
+}
     
 #profile-image {
     border-radius: 50%;
@@ -165,4 +165,33 @@ footer {
 
 #testimonials > img, h2, h3, p {
     text-align: center;
+}
+
+@media (max-width: 680px) {
+
+    nav {
+        flex-direction: column;
+        height: 200px;
+        align-content: space-around;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #profile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #aboutMe {
+        width: 100%;
+    }
+
+    #training > p, h2, h3 {
+        width: 100%;
+    }
 }
