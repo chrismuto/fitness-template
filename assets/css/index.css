@@ -16,10 +16,6 @@ body {
 nav {
     height: 80px;
     font-size: 18px;
-    background-color: var(--primary-color);
-    position: sticky;
-    top: 0px;
-    z-index: 9999;
     display: flex;
     align-items: center;
 }
@@ -43,9 +39,9 @@ nav > div {
     align-items: center;
 }
 
-a {
+nav > div > a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 article {
@@ -53,27 +49,13 @@ article {
 }
 
 footer {
+    margin-top: 50px;
     background-color: var(--primary-color);
     color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-}
-
-.vert-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.horizontal-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
 }
 
 .logo {
@@ -183,12 +165,33 @@ footer {
 #image-table {
     display: grid;
     grid-template-columns: repeat(1, 1);
-    background-color: #FFFFFF;
-    opacity: 0.5;
 }
 
 #testimonials > img, h2, h3, p {
     text-align: center;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+#form-content {
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#form-submit {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    margin-top: 15px;
+    width: 50px;
+    filter: drop-shadow(grey 2px 2px 2px)
 }
 
 @media (max-width: 680px) {
