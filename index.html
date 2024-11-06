@@ -114,17 +114,17 @@
         </article>
 
         <div id="form-container" class="animate">         
-            <form id="email-form" action=”mailto:contact@yourdomain.com” method=”POST” enctype=”text/plain”>
+            <form id="email-form" action=”mailto:chrismuto@gmail.com” method=”POST” enctype=”text/plain”>
                 <div id="form-content" class="horizontal-container">
                     <label for="name">*Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
                     <label for="phone">*Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
+                    <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required>
                     <label for="email">*Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
             </form>
-            <textarea form="email-form" rows="4" placeholder="Leave a message..."></textarea>
+            <textarea form="email-form" rows="4" placeholder="Leave a message..." required></textarea>
             <input id="form-submit" form="email-form" onclick="!this.form && document.getElementById('myform').submit()" type="submit" value="Send">
         </div>
 

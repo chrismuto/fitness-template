@@ -233,4 +233,12 @@ footer {
     #training > p, h2, h3 {
         width: 100%;
     }
+
+    #form-container {
+        width: 300px;
+    }
+    
+    #form-content {
+        flex-direction: column;
+    }
 }
