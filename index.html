@@ -6,20 +6,19 @@
     <title>Fitness Template</title>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/style-classes.css">
-    <script src="./assets/js/index.js"></script>
 </head>
 <body>
     <nav aria-label="navigation">
         <span>
             <img src="./assets/images/logo.png" class="logo"/>
         </span>
-        <div>
+        <div id="nav-menu">
             <a href="#about">About</a>
             <a href="#training">Training</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </div>
-        <img src="./assets/images/hamburger-menu.svg" />
+        <img id="menu-button" src="./assets/images/hamburger-menu.svg" />
     </nav>
     <main>
         <div id="about" aria-label="profile">
@@ -39,47 +38,47 @@
             <p id="aboutMe" aria-label="about me">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            </p>
-        </div>
-
-        <article id="training" aria-label="training" class="vert-container flex-center animate">
-                <h2>
-                    Available Training
-                </h2>
-                <div class="training-options">
-                    <div class="vert-container flex-center training-item">
-                        <h3>
-                            Physical Therapy
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="vert-container flex-center training-item">
-                        <h3>
-                            Mobility and Wellness
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="vert-container flex-center training-item">
-                        <h3>
-                            Strength Training
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                </div>
-            </article>
-
+        </p>
+    </div>
+    
+    <article id="training" aria-label="training" class="vert-container flex-center animate">
+        <h2>
+            Available Training
+        </h2>
+        <div class="training-options">
+            <div class="vert-container flex-center training-item">
+                <h3>
+                    Physical Therapy
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="vert-container flex-center training-item">
+                <h3>
+                    Mobility and Wellness
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="vert-container flex-center training-item">
+                <h3>
+                    Strength Training
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+        
         <div id="image-table" class="animate">
             <img class="image-odd" src="./assets/images/workout1.jpg" />
             <img class="image-even" src="./assets/images/workout2.jpg" />
             <img class="image-odd" src="./assets/images/workout3.png" />
             <img class="image-even" src="./assets/images/workout4.webp" />
         </div>
-
+        
         <article id="testimonials" aria-label="testimonials" class="animate vert-container flex-center">
             <h2>
                 Client Stories
@@ -112,7 +111,7 @@
                 </p>
             </div>
         </article>
-
+        
         <div id="form-container" class="animate">         
             <form id="email-form" action=”mailto:chrismuto@gmail.com” method=”POST” enctype=”text/plain”>
                 <div id="form-content" class="horizontal-container">
@@ -127,7 +126,7 @@
             <textarea form="email-form" rows="4" placeholder="Leave a message..." required></textarea>
             <input id="form-submit" form="email-form" onclick="!this.form && document.getElementById('myform').submit()" type="submit" value="Send">
         </div>
-
+        
         <footer id="contact" aria-label="contact information">
             <p>
                 phone: (858) 555-5555
@@ -138,4 +137,5 @@
         </footer>
     </main>
 </body>
+<script src="./assets/js/index.js"></script>
 </html>

@@ -32,16 +32,16 @@ nav > img {
     display: none;
 }
 
-nav > div {
+#nav-menu {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav > div > a {
+#nav-menu > a {
     text-decoration: none;
-    color: #000000;
+    color: var(--primary-color);
 }
 
 article {
@@ -126,6 +126,10 @@ footer {
     animation: slidein 1.5s ease;
 }
 
+.slide-in {
+animation: slideIn 1s ease-out forwards;
+}
+
 #about {
     display:flex;
     flex-direction: column;
@@ -202,12 +206,58 @@ footer {
         align-items: center;
     }
 
-    nav > div {
-        display: none;
+    nav > a {
+        margin: 15px;
+    }
+    
+    @keyframes menuSlideIn {
+        0% {
+            scale: 0;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+
+    @keyframes menuSlideOut {
+        0% {
+            scale: 1;
+        }
+        100% {
+            scale: 0;
+        }
+    }
+
+    .menu-slide-in {
+        animation: menuSlideIn 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    
+    .menu-slide-out {
+        animation: menuSlideOut 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+
+    #nav-menu {
+        scale: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        transform-origin: top right;
+    }
+
+    #nav-menu > a {
+        color: #FFFFFF;
     }
 
     nav > img {
         display: block;
+        z-index: 2;
     }
 
     footer {
