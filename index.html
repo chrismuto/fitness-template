@@ -79,53 +79,43 @@
             <img class="image-even" src="./assets/images/workout4.webp" />
         </div>
         
-        <article id="testimonials" aria-label="testimonials" class="animate vert-container flex-center">
-            <h2>
+            <h2 style="text-align: center; width: 100vw">
                 Client Stories
             </h2>
-            <div class="testimonial flex-center animate">
-                <img src="./assets/images/christianProfile.jpg" />
-                <h3>
-                    John Doe
-                </h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </div>
-            <div class="testimonial flex-center animate">
-                <img src="./assets/images/christianProfile.jpg" />
-                <h3>
-                    Bill E. Jean
-                </h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </div>
-            <div class="testimonial flex-center animate">
-                <img src="./assets/images/christianProfile.jpg" />
-                <h3>
-                    Chris Muto
-                </h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </div>
-        </article>
-        
-        <div id="form-container" class="animate">         
-            <form id="email-form" action=”mailto:chrismuto@gmail.com” method=”POST” enctype=”text/plain”>
-                <div id="form-content" class="horizontal-container">
-                    <label for="name">*Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <label for="phone">*Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required>
-                    <label for="email">*Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <article id="testimonials" aria-label="testimonials" class="animate vert-container" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#171;</button>
+            <section class="animate testimonial-carousel" data-slides>
+                <div class="testimonial" data-active>
+                    <!-- <img src="./assets/images/christianProfile.jpg" /> -->
+                    <h3>
+                        John Doe
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
                 </div>
-            </form>
-            <textarea form="email-form" rows="4" placeholder="Leave a message..." required></textarea>
-            <input id="form-submit" form="email-form" onclick="!this.form && document.getElementById('myform').submit()" type="submit" value="Send">
-        </div>
+                <div class="testimonial">
+                    <!-- <img src="./assets/images/christianProfile.jpg" /> -->
+                    <h3>
+                        Bill E. Jean
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <!-- <img src="./assets/images/christianProfile.jpg" /> -->
+                    <h3 style="width: 100%">
+                        Chris Muto
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+            </section>
+            <button class="carousel-button next" data-carousel-button="next">&#187;</button>
+        </article>
         
         <footer id="contact" aria-label="contact information">
             <p>

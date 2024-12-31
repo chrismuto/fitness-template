@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #253a5c;
     --secondary-color: #000000;
@@ -84,20 +88,53 @@ footer {
     padding: 15px;
 }
 
+#testimonials {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonial-carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
 .testimonial {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    /* min-height: 150px;  figure out how to get a stable height for all testimonials*/
+    display: none;
 }
-.testimonial > p {
+
+.testimonial[data-active] {
+    display: inline;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.carousel-button:hover, .carousel-button:focus {
+    color: grey;
+}
+
+.carousel-button:focus {
+    outline: 1px solid grey;
+}
+
+.testimonial > h3, p {
     font-size: 18px;
     font-style: italic;
 }
 
-.testimonial > img {
+/* .testimonial > img {
     border-radius: 50%;
-}
+} */
 
 .image-odd {
     width: 100%;
@@ -162,10 +199,6 @@ animation: slideIn 1s ease-out forwards;
     display: flex;
 }
 
-#training > p, h2, h3 {
-    width: 50%;
-}
-
 #image-table {
     display: grid;
     grid-template-columns: repeat(1, 1);
@@ -173,29 +206,6 @@ animation: slideIn 1s ease-out forwards;
 
 #testimonials > img, h2, h3, p {
     text-align: center;
-}
-
-#form-container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 800px;
-    margin: auto;
-    background-color: lightgrey;
-    border-radius: 5px;
-}
-
-#form-content {
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-#form-submit {
-    background-color: var(--secondary-color);
-    color: #FFFFFF;
-    margin-top: 15px;
-    width: 50px;
-    filter: drop-shadow(grey 2px 2px 2px)
 }
 
 @media (max-width: 680px) {
@@ -282,13 +292,5 @@ animation: slideIn 1s ease-out forwards;
 
     #training > p, h2, h3 {
         width: 100%;
-    }
-
-    #form-container {
-        width: 300px;
-    }
-    
-    #form-content {
-        flex-direction: column;
     }
 }
