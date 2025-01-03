@@ -88,47 +88,38 @@ footer {
     padding: 15px;
 }
 
-#testimonials {
-    display: flex;
-    flex-direction: row;
+.testimonial-container {
+    overflow-x: hidden;
 }
 
 .testimonial-carousel {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
+    width: 100%;
+    animation: slide 30s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    90% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }
 
 .testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-shrink: 0;
     width: 100%;
-    /* min-height: 150px;  figure out how to get a stable height for all testimonials*/
-    display: none;
-}
-
-.testimonial[data-active] {
-    display: inline;
-}
-
-.carousel-button {
-    background: none;
-    border: none;
-    font-size: 4rem;
-    color: var(--primary-color);
-}
-
-.carousel-button:hover, .carousel-button:focus {
-    color: grey;
-}
-
-.carousel-button:focus {
-    outline: 1px solid grey;
-}
-
-.testimonial > h3, p {
-    font-size: 18px;
+    padding: 30px;
     font-style: italic;
 }
 
@@ -161,10 +152,6 @@ footer {
 
 .in-view {
     animation: slidein 1.5s ease;
-}
-
-.slide-in {
-animation: slideIn 1s ease-out forwards;
 }
 
 #about {
